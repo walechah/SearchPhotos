@@ -1,0 +1,42 @@
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 4px;
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  .SearchBar input {
+    border: 4px solid transparent;
+    box-shadow: 0 0 4px black;
+    padding: 10px;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .SearchBar button {
+    background-color: palegreen;
+    border-radius: 50px;
+    border: 4px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .SearchBar button:hover {
+    background-color: lightgreen;
+  }
+  
+  @media (max-width: 768px) {
+    .SearchBar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .SearchBar input, .SearchBar button {
+      width: 100%;
+    }
+  }
